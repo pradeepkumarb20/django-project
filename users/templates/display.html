@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PRODUCTS :</h1>
+    <div id="maindiv1">
+
+        {% for i in data %}
+        <ul type="none">
+            <li id="img"><a href="{% url 'dispaly' i.id}"></a>
+            <img src="{{i.image.url}}" alt=""></li>
+        </ul>
+        <ul>
+            <li id="name"><a href="{% url 'display' i.id}">
+                {{i.brand}}
+                <br><br>{{i.model}}
+                <br><br>
+                {{i.price}} 
+            </a></li>
+        </ul>
+
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.para{
+    font-size: large;
+}
+#title{
+    display: inline;
+    background-color:blue ;
+}
+#head{
+    text-align: center;
+    color: black;
+    background-color: aquamarine;
+}
+.head{
+    text-align: center;
+}
+#image{
+    height: 40%;
+    width: 100%;
+}
+h1{
+    background-color: blue;
+}

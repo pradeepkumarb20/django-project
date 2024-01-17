@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/single.css' %}">
+    <title>Document</title>
+</head>
+
+<body style="margin: 5%;">
+    <h1 id="title">{{data.title}}</h1>
+    <h4>posted on {{data.blog_date}}</h4>
+    <img src="{{data.poster.url}}" alt="" id="image">
+    <h1 class="head">STORY</h1>
+    <p class="para">{{data.story}}</p>
+    <h1 class="head">REVIEW</h1>
+    <p class="para">{{data.review}}</p><br><br>
+    <h3 class="head">release date : {{data.release_date}}</h3>
+    <h2 style="text-align: center;">rating : {{data.movie_rating}} out of 5</h2>
+
+    <h1>{{comment|length}} comments</h1>
+    {% for i in comment %}
+    <h2>USER : {{i.user}}</h2>
+    <h4>comment date:{{i.comment_date}}</h4>
+    <p>{{i.comment}}</p>
+    {% endfor %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="post" id="submit-btn">
+    </form>
+    <a href="{% url 'home' %}"><button type="button" style="font-size:larger;background-color: red;">return</button></a>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

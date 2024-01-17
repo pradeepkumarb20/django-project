@@ -1,0 +1,49 @@
+.head{
+    text-align: center;
+}
+.para{
+    font-size: large;
+}
+#title{
+    display: inline;
+    background-color:aqua ;
+}
+#head{
+    text-align: center;
+    color: black;
+    background-color: aquamarine;
+}
+#btn{
+    color: black;
+    background-color: blue;
+    font-size: larger;
+}
+h1{
+    text-align: center;
+    
+}
+
+#body{
+    text-align: center;
+    background-color: aquamarine;
+}
+label{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#head{
+    text-align: center;
+    color: black;
+    background-color: aquamarine;
+}
+#btn{
+    color: black;
+    background-color: blue;
+    font-size: larger;
+}
+#image{
+    height: 40%;
+    width: 100%;
+}

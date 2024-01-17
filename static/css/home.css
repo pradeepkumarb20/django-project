@@ -1,0 +1,18 @@
+
+#head{
+    text-align: center;
+    color: black;
+    background-color: aquamarine;
+}
+#btn{
+    color: black;
+    background-color: blue;
+    font-size: larger;
+}
+#image{
+    height: 40%;
+    width: 100%;
+}
+h1{
+    background-color: blue;
+}

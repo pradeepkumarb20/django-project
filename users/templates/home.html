@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Document</title>
+</head>
+<body style="margin: 5%;">
+    <a href="{% url 'logout' %}"><button type="button">logout</button></a>
+    <div style="background-color: aquamarine; ">
+    <h1 id="head">MOVIE REVIEW BLOG</h1>
+    <h3 style="text-align: center;"> MOVIE BLOG FOR THE LATEST MOVIE REVIEW,AND MORE</h3>
+    </div>
+    <br>
+
+    {% for i in data %}
+    <h1>{{i.title}}</h1>
+    <h4>posted on {{i.blog_date}} | by pradeep</h4>
+    <img src="{{i.poster.url}}" alt="" id="image"><br><br>
+    <a href="{% url 'single' i.id %}"><button type="button" id="btn">READMORE</button></a>
+    {% endfor %}
+</body>
+</html>

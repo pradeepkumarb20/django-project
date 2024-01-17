@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home1.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>MOVIE REVIEW</h1>
+    <h1>HOME PAGE</h1>
+    <a href="{% url 'login' %}"><button type="button">LOGIN</button></a>
+    <a href="{% url 'register' %}"><button type="button">REGISTER</button></a>
+    </div> 
+</body>
+</html>
